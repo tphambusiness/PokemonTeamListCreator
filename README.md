@@ -1,7 +1,7 @@
 # PokemonTeamListCreator
 Creates an Open Team List/Sheet from PVPoke Team Builder paste (GO) 
 
-# WIP
+> **WIP**
 
 Fork of https://dhsufi.github.io/PokemonTeamListCreator/ (VGC Team Sheet generator), modified for Pokémon GO Open Team Sheets.
 
@@ -10,6 +10,10 @@ This website takes the "Team Sheet Export" JSON data generated from PVPoke's Tea
 
 ## To-do:
 - Instructions on how to export from PVPoke Team Builder 
+- Multi-language support
+- Test cases for Best Buddy/Purified/Shadow
+- Move/mon eligibility validation
+- Streamline updating process from PVPoke/PokeMiners
 
 
 ## Libraries used:
@@ -17,6 +21,8 @@ This website takes the "Team Sheet Export" JSON data generated from PVPoke's Tea
 - https://github.com/itsjavi/koffing - used as basis for `pvpokeparser.mjs`
 
 - https://github.com/parallax/jsPDF
+
+- https://github.com/pvpoke/pvpoke/blob/master/src/data/gamemaster/ - source of `GameMaster/gamemaster.json`, `GameMaster/moves.json`, `GameMaster/pokemon.json`
 
 
 ## Thanks to:
