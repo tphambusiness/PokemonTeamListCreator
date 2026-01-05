@@ -1,30 +1,26 @@
 # PokemonTeamListCreator
-Creates an Open Team List/Sheet and Close Team List/Sheet from Pokémon Showdown paste
+Creates an Open Team List/Sheet from PVPoke Team Builder paste (GO) 
 
-Update March 2024
-- Added multi language list. Thanks a lot to Aurélien Soula (Axior)
+# WIP
 
-Update December 2023:
-- Added Pokémon from The Indigo Disk
-- Added the ability to pass URL parameters ([Thanks to Joe Zhu](https://twitter.com/joezhuu)):
-  - player=text
-  - trainer=text
-  - team=text
-  - switch=text
-  - id=text
-  - dob=text (recommended use -)
-  - age=Junior, Senior or Master
-  - lang=chs, cht, en, es, fre, ger, ita, jpn, jpnkanji or kor
+Fork of https://dhsufi.github.io/PokemonTeamListCreator/ (VGC Team Sheet generator), modified for Pokémon GO Open Team Sheets.
 
-Update July 2023:
-- Added Pokémon for Regulation D
-- Improved file size (about x50 less disk space)
-  
-Pending: Special characters not allowed (for example ★)
-
-Libraries used:
-
-https://github.com/itsjavi/koffing
+This website takes the "Team Sheet Export" JSON data generated from PVPoke's Team Builder section (https://pvpoke.com/team-builder/), and pre-fills a "Pokémon GO Team List" used for Show6 local GO tournaments.
 
 
-https://github.com/parallax/jsPDF
+## To-do:
+- Instructions on how to export from PVPoke Team Builder 
+
+
+## Libraries used:
+
+- https://github.com/itsjavi/koffing - used as basis for `pvpokeparser.mjs`
+
+- https://github.com/parallax/jsPDF
+
+
+## Thanks to:
+
+- DhSufi (https://github.com/DhSufi/PokemonTeamListCreator) for the original VGC Team Sheet Generator, guidance, and creating the `jspdf` code
+- ilqm (https://goteamlist.com/) for guidance and creating GOTeamList - check his website out if you want a more manual input method of creating GO Team Sheets
+- KakunaMattata42 (https://pvpoke.com/) for guidance and modifying PVPoke to include CP/HP exports in the Team Builder
