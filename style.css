@@ -1,13 +1,13 @@
 @font-face {
-    font-family: Montserrat;
-    src: url(Montserrat-Medium.ttf);
+    font-family: Calibri;
+    src: url(calibri.ttf);
   }
   
   
   body{
       background-color:  rgb(5, 6, 45);
       color: white;
-      font-family: Montserrat;
+      font-family: Calibri;
       font-size: 15px;
       margin:30px;
   }
@@ -219,7 +219,7 @@
       min-width: 500px;
       min-height: 720px;
       border-radius: 5px;
-      font-family: Montserrat;
+      font-family: Calibri;
       padding: 5px;
   }
   

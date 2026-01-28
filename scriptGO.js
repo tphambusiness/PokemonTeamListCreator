@@ -4,6 +4,7 @@
 import * as pkg from './pvpokeparser.mjs';
 // const { pvpokeparser } = pkg;
 
+// test case
 let teamString = '[{"speciesId":"scizor_shadow","fastMove":"BULLET_PUNCH","chargedMoves":["NIGHT_SLASH","TRAILBLAZE"],"shadowType":"shadow","cp":1500,"hp":105,"bestBuddy":false,"isShadow":true},{"speciesId":"talonflame_shadow","fastMove":"INCINERATE","chargedMoves":["FLAME_CHARGE","FLY"],"shadowType":"shadow","cp":1500,"hp":135,"bestBuddy":false,"isShadow":true},{"speciesId":"stunfisk","fastMove":"THUNDER_SHOCK","chargedMoves":["MUD_BOMB","DISCHARGE"],"level":27,"ivs":[0,12,15],"cp":1498,"hp":177,"bestBuddy":false,"isShadow":false},{"speciesId":"furret","fastMove":"SUCKER_PUNCH","chargedMoves":["SWIFT","TRAILBLAZE"],"level":35.5,"ivs":[1,15,14],"cp":1500,"hp":162,"bestBuddy":false,"isShadow":false},{"speciesId":"guzzlord","fastMove":"DRAGON_TAIL","chargedMoves":["BRUTAL_SWING","SLUDGE_BOMB"],"cp":1499,"hp":265,"bestBuddy":false,"isShadow":false},{"speciesId":"jellicent","fastMove":"HEX","chargedMoves":["SURF","SHADOW_BALL"],"cp":1499,"hp":156,"bestBuddy":false,"isShadow":false}]';
 let team = JSON.parse(teamString);
 
@@ -11,6 +12,7 @@ let mon1 = pkg.Pokemon.fromObject(team[0]);
 
 console.log(mon1.speciesId);
 console.log(pkg.pokemonMap.get(mon1.speciesId));
+// end test case
 
 //Thanks a lot to @joezhuu for these brilliant changes
 const urlParams = new URLSearchParams(window.location.search);
@@ -302,7 +304,7 @@ function generateStaffList(){
 
     // doc.save("-reg.pdf");
 
-    drawList(doc, "staff");
+    drawList(doc, "staff", pokes);
 
     doc.save("-reg.pdf");
 
@@ -443,7 +445,7 @@ function drawList(doc, listType, data){
 
 }
 
-button.addEventListener('click', generateStaffList);
+button.addEventListener('click', generateStaffList());
 
 document.getElementById("open").checked = true;
 window.generatePdf = generatePdf;
